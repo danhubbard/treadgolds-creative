@@ -33,7 +33,7 @@
                     <a href="#" class="text-[#E4C259] hover:text-gray-300">History</a>
                     <a href="#" class="text-[#E4C259] hover:text-gray-300">Gallery</a>
                 </nav>
-                <button class="bg-[#E4C259] text-black px-6 py-2 rounded hover:bg-gray-200 transition-colors">
+                <button onclick="document.getElementById('bookings').scrollIntoView({behavior: 'smooth'})" class="bg-[#E4C259] text-black px-6 py-2 rounded hover:bg-gray-200 transition-colors">
                     Book now
                 </button>
             </div>
@@ -143,7 +143,7 @@
       </div>
   </div>
 
-  <div class="w-full bg-slate-800">
+  <div id="bookings" class="w-full bg-slate-800">
     <div class="max-w-screen-xl mx-auto px-5 sm:px-0 py-24">
         <h2 class="text-7xl text-[#E4C259] font-bold font-['Libre_Caslon_Text'] mb-18">Booking & Enquiries</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
