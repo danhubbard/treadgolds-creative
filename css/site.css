@@ -1,0 +1,74 @@
+@keyframes backgroundFade {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: backgroundFade 25s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.background-image:nth-child(1) {
+    background-image: url('../images/hero-1.jpg');
+    animation: none;
+    opacity: 1;
+}
+
+.background-image:nth-child(2) {
+    background-image: url('../images/hero-2.jpg');
+    animation-delay: 5s;
+}
+
+.background-image:nth-child(3) {
+    background-image: url('../images/hero-3.jpg');
+    animation-delay: 10s;
+}
+
+.background-image:nth-child(4) {
+    background-image: url('../images/hero-4.jpg');
+    animation-delay: 15s;
+}
+
+.background-image:nth-child(5) {
+    background-image: url('../images/hero-5.jpg');
+    animation-delay: 20s;
+}
+
+/* Libre Caslon Text font classes */
+.libre-caslon-text-regular {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libre-caslon-text-bold {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-caslon-text-regular-italic {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+} 

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treadgolds Creative Space</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="css/site.css" rel="stylesheet">
+</head>
+<body class="min-h-screen overflow-x-hidden bg-gray-700">
+    <div class="absolute inset-0 -z-10">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100" style="background-image: url('images/hero-1.jpg')"></div>
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0 animate-[backgroundFade_25s_infinite_ease-in-out]" style="background-image: url('images/hero-2.jpg'); animation-delay: 5s"></div>
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0 animate-[backgroundFade_25s_infinite_ease-in-out]" style="background-image: url('images/hero-3.jpg'); animation-delay: 10s"></div>
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0 animate-[backgroundFade_25s_infinite_ease-in-out]" style="background-image: url('images/hero-4.jpg'); animation-delay: 15s"></div>
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0 animate-[backgroundFade_25s_infinite_ease-in-out]" style="background-image: url('images/hero-5.jpg'); animation-delay: 20s"></div>
+    </div>
+    <!-- Title Bar -->
+    <div class="bg-slate-900 text-white p-4 fixed top-0 left-0 right-0 z-20">
+        <div class="w-full sm:w-4/5 sm:mx-auto flex items-center justify-between px-4 sm:px-0">
+            <!-- Left Section -->
+            <div class="w-1/2">
+                <img src="images/lion.svg" alt="Lion Logo" class="h-12 w-auto">
+            </div>
+            
+            <!-- Right Section -->
+            <div class="w-1/2 flex items-center justify-end gap-8">
+                <nav class="hidden sm:flex gap-6">
+                    <a href="#" class="text-[#E4C259] hover:text-gray-300">About the space</a>
+                    <a href="#" class="text-[#E4C259] hover:text-gray-300">History</a>
+                    <a href="#" class="text-[#E4C259] hover:text-gray-300">Gallery</a>
+                </nav>
+                <button class="bg-[#E4C259] text-black px-6 py-2 rounded hover:bg-gray-200 transition-colors">
+                    Book now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-screen-2xl mx-auto relative bg-slate-900/80 backdrop-blur-xs z-10 mt-[calc(100vh-300px)] sm:mt-[calc(100vh-400px)] rounded-sm">
+        <div class="mx-auto px-5 sm:px-16 max-w-screen-xl py-16 sm:py-24">
+            <h1 class="text-4xl md:text-6xl mb-8 font-['Libre_Caslon_Text'] font-bold text-[#E4C259]">Treadgolds Creative Space</h1>
+            <p class="text-3xl text-gray-200 mb-16">A unique space for creative disciplines in the heart of historic Portsmouth.</p>
+            
+            <!-- Grid Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <!-- Grid Item 1 -->
+                <div class="flex flex-col">
+                    <div class="w-full h-72 bg-white mb-4"><img src="images/filming.jpg" alt="Filming & Photography" class="w-full h-full object-cover"></div>
+                    <h3 class="text-xl text-white uppercase">Filming & Photography</h3>
+                </div>
+                
+                <!-- Grid Item 2 -->
+                <div class="flex flex-col">
+                    <div class="w-full h-72 bg-white mb-4"><img src="images/art.jpg" alt="Art Exhibitions" class="w-full h-full object-cover"></div>
+                    <h3 class="text-xl text-white uppercase">Art Exhibitions</h3>
+                </div>
+                
+                <!-- Grid Item 3 -->
+                <div class="flex flex-col">
+                    <div class="w-full h-72 bg-white mb-4"><img src="images/dance.avif" alt="Dance & Theatre" class="w-full h-full object-cover"></div>
+                    <h3 class="text-xl text-white uppercase">Dance & Theatre</h3>
+                </div>
+                
+                <!-- Grid Item 4 -->
+                <div class="flex flex-col">
+                    <div class="w-full h-72 bg-white mb-4"><img src="images/event.jpg" alt="Meetups, Classes & Events" class="w-full h-full object-cover"></div>
+                    <h3 class="text-xl text-white uppercase">Meetups, Classes & Events</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Section -->
+    <div class="w-full bg-slate-500 mt-24 px-5 sm:px-0">
+        <div class="max-w-screen-xl mx-auto py-24">
+            <h2 class="text-7xl text-[#E4C259] font-bold font-['Libre_Caslon_Text'] mb-18">The Space</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <p class="text-gray-200 text-xl">The historic Treadgolds Warehouse venue is a fully accessible, ground-floor open space ideal for a range of creative disciplines as well as training and conferences.</p>
+                    <p class="text-gray-200 text-xl mt-6">The building itself may be historic but the offer inside is anything but, featuring every modern facility you're likely to need. This adds to the ambience of the location; a sensitively restored 19th Century blacksmiths and ironmongers. The building still retains its sense of historic significance whilst providing a bright and characterful venue.</p>
+                </div>
+                <div>
+                    <p class="text-gray-200 text-xl">Outside, the building opens up to a beautiful community courtyard garden full of plants, herbs and flowers, which is also available for use on request.</p>
+                    <p class="text-gray-200 text-xl mt-6">The space is available for hire as a whole or in part for a range of creative disciplines. Recent uses have included filming, photography, art exhibitions, dance, theatre, meetups, classes and conferences.</p>
+                    <p class="text-gray-200 text-xl mt-6">Treadgolds Warehouse is suitable for up to 80 people.</p>
+                </div>
+            </div>
+
+            <!-- Gallery Section -->
+            <div class="mt-24">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="aspect-video overflow-hidden rounded-lg bg-gray-200 flex items-center justify-center">
+                        <img src="images/missing-image.svg" alt="Gallery Image 1" class="w-24 h-24 object-contain hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="aspect-video overflow-hidden rounded-lg bg-gray-200 flex items-center justify-center">
+                        <img src="images/missing-image.svg" alt="Gallery Image 2" class="w-24 h-24 object-contain hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="aspect-video overflow-hidden rounded-lg bg-gray-200 flex items-center justify-center">
+                        <img src="images/missing-image.svg" alt="Gallery Image 3" class="w-24 h-24 object-contain hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="aspect-video overflow-hidden rounded-lg bg-gray-200 flex items-center justify-center">
+                        <img src="images/missing-image.svg" alt="Gallery Image 4" class="w-24 h-24 object-contain hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="aspect-video overflow-hidden rounded-lg bg-gray-200 flex items-center justify-center">
+                        <img src="images/missing-image.svg" alt="Gallery Image 5" class="w-24 h-24 object-contain hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="aspect-video overflow-hidden rounded-lg bg-gray-200 flex items-center justify-center">
+                        <img src="images/missing-image.svg" alt="Gallery Image 6" class="w-24 h-24 object-contain hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="aspect-video overflow-hidden rounded-lg bg-gray-200 flex items-center justify-center">
+                        <img src="images/missing-image.svg" alt="Gallery Image 4" class="w-24 h-24 object-contain hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="aspect-video overflow-hidden rounded-lg bg-gray-200 flex items-center justify-center">
+                        <img src="images/missing-image.svg" alt="Gallery Image 5" class="w-24 h-24 object-contain hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="aspect-video overflow-hidden rounded-lg bg-gray-200 flex items-center justify-center">
+                        <img src="images/missing-image.svg" alt="Gallery Image 6" class="w-24 h-24 object-contain hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-neutral-300">
+      <div class="max-w-screen-xl mx-auto px-5 sm:px-0 py-24">
+          <h2 class="text-7xl text-slate-700 font-bold font-['Libre_Caslon_Text'] mb-18">History</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div>
+                  <p class="text-gray-600 text-xl">This site was first developed in the early eighteenth century when Queen Anne authorised the building of houses for Dockyard personnel on Portsmouth Common to ease the pressure within the walled city of Portsmouth caused by the increase in population at the dockyard.</p>
+                  <p class="text-gray-600 text-xl mt-6">No's 49 to 52 Bishop Street, a terrace of two storey houses were built between 1706 and 1717. No.52 was acquired by John Jones, a blacksmith, in 1787. In 1832, No. 51 was purchased and rebuilt as a three storey house for the family of William Treadgold. The original shop was extended to the north in 1849-50, and in 1863 No. 51 was converted into the company offices.</p>
+              </div>
+              <div>
+                  <p class="text-gray-600 text-xl">Treadgold's ceased trading in 1988 and was sold to Hampshire County Council. It was run as a museum from 1995 to 2003 when it was closed due to safety and maintenance.</p>
+                  <p class="text-gray-600 text-xl mt-6">Ownership of the building was transferred to the John Pounds Community Trust, with the intention to develop Treadgolds as an extension of the John Pounds Centre which caters to the health and wellbeing of the Portsea community.</p>
+                  <p class="text-gray-600 text-xl mt-6">To discover more about the development of the Treadgolds Warehouse, as well as learning the history and seeing the venue as it is today, take a look at <a href="https://www.treadgolds.co.uk/" class="text-slate-900 hover:text-gray-300">www.treadgolds.co.uk</a>.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="w-full bg-slate-800">
+    <div class="max-w-screen-xl mx-auto px-5 sm:px-0 py-24">
+        <h2 class="text-7xl text-[#E4C259] font-bold font-['Libre_Caslon_Text'] mb-18">Booking & Enquiries</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="md:col-span-2">
+
+                <h3 class="text-2xl text-[#E4C259] font-semibold mb-4">Booking Enquiries</h3>
+                <form action="https://formsubmit.co/your@email.com" method="POST" class="space-y-6 max-w-2xl">
+                    <div>
+                        <label for="name" class="block text-gray-200 text-lg mb-2">Name</label>
+                        <input type="text" name="name" required 
+                            class="w-full px-4 py-3 rounded-lg bg-slate-700 text-gray-200 border border-slate-600 focus:border-[#E4C259] focus:ring-1 focus:ring-[#E4C259] outline-none transition-colors">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-200 text-lg mb-2">Email</label>
+                        <input type="email" name="email" required 
+                            class="w-full px-4 py-3 rounded-lg bg-slate-700 text-gray-200 border border-slate-600 focus:border-[#E4C259] focus:ring-1 focus:ring-[#E4C259] outline-none transition-colors">
+                    </div>
+                    <div>
+                        <label for="dates" class="block text-gray-200 text-lg mb-2">Date(s)</label>
+                        <input type="text" name="dates" required 
+                            class="w-full px-4 py-3 rounded-lg bg-slate-700 text-gray-200 border border-slate-600 focus:border-[#E4C259] focus:ring-1 focus:ring-[#E4C259] outline-none transition-colors"
+                            placeholder="e.g. 15th March 2025 or 15-17 March 2025">
+                    </div>
+                    <div>
+                        <label for="notes" class="block text-gray-200 text-lg mb-2">Notes</label>
+                        <textarea name="notes" rows="4" 
+                            class="w-full px-4 py-3 rounded-lg bg-slate-700 text-gray-200 border border-slate-600 focus:border-[#E4C259] focus:ring-1 focus:ring-[#E4C259] outline-none transition-colors"
+                            placeholder="Please provide any additional information about your booking request..."></textarea>
+                    </div>
+                    <button type="submit" 
+                        class="w-full bg-[#E4C259] text-slate-900 px-6 py-3 rounded-lg font-semibold hover:bg-[#d4b24f] transition-colors">
+                        Send Enquiry
+                    </button>
+                </form>
+            </div>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-2xl text-[#E4C259] font-semibold mb-4">Contact Us</h3>
+                    <div class="space-y-4">
+                        <p class="text-gray-200">
+                            <span class="font-semibold">Address:</span><br>
+                            Treadgolds Warehouse<br>
+                            1 Bishop Street<br>
+                            Portsmouth<br>
+                            PO1 3DA
+                        </p>
+                        <p class="text-gray-200">
+                            <span class="font-semibold">Email:</span><br>
+                            <a href="mailto:enquiries@treadgoldscreativespace.co.uk" class="text-[#E4C259] hover:text-gray-300 transition-colors">
+                                enquiries@treadgoldscreativespace.co.uk
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
