@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="css/site.css" rel="stylesheet">
 </head>
-<body class="min-h-screen overflow-x-hidden bg-gray-700">
+<body id="top" class="min-h-screen overflow-x-hidden bg-gray-700">
     <div class="absolute inset-0 -z-10">
         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100" style="background-image: url('images/hero-1.jpg')"></div>
         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0 animate-[backgroundFade_25s_infinite_ease-in-out]" style="background-image: url('images/hero-2.jpg'); animation-delay: 5s"></div>
@@ -23,15 +23,15 @@
         <div class="w-full sm:w-4/5 sm:mx-auto flex items-center justify-between px-4 sm:px-0">
             <!-- Left Section -->
             <div class="w-1/2">
-                <img src="images/lion.svg" alt="Lion Logo" class="h-12 w-auto">
+                <img onclick="window.scrollTo({top: 0, behavior: 'smooth'})" src="images/lion.svg" alt="Lion Logo" class="h-12 w-auto cursor-pointer">
             </div>
             
             <!-- Right Section -->
             <div class="w-1/2 flex items-center justify-end gap-8">
                 <nav class="hidden sm:flex gap-6">
-                    <a href="#" class="text-[#E4C259] hover:text-gray-300">About the space</a>
-                    <a href="#" class="text-[#E4C259] hover:text-gray-300">History</a>
-                    <a href="#" class="text-[#E4C259] hover:text-gray-300">Gallery</a>
+                    <a onclick="document.getElementById('space').scrollIntoView({behavior: 'smooth'})" class="text-[#E4C259] hover:text-gray-300 cursor-pointer">The Space</a>
+                    <a onclick="document.getElementById('history').scrollIntoView({behavior: 'smooth'})" class="text-[#E4C259] hover:text-gray-300 cursor-pointer">History</a>
+                    <a onclick="document.getElementById('bookings').scrollIntoView({behavior: 'smooth'})" class="text-[#E4C259] hover:text-gray-300 cursor-pointer">Contact</a>
                 </nav>
                 <button onclick="document.getElementById('bookings').scrollIntoView({behavior: 'smooth'})" class="bg-[#E4C259] text-black px-6 py-2 rounded hover:bg-gray-200 transition-colors">
                     Book now
@@ -76,7 +76,7 @@
     </div>
 
     <!-- New Section -->
-    <div class="w-full bg-slate-500 sm:mt-24 px-5 sm:px-0">
+    <div id="space" class="w-full bg-slate-500 sm:mt-24 px-5 sm:px-0">
         <div class="max-w-screen-xl mx-auto py-24">
             <h2 class="text-7xl text-[#E4C259] font-bold font-['Libre_Caslon_Text'] mb-18">The Space</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -92,7 +92,7 @@
             </div>
 
             <!-- Gallery Section -->
-            <div class="mt-24">
+            <div id="gallery" class="mt-24">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="aspect-video overflow-hidden rounded-lg bg-gray-200 flex items-center justify-center">
                         <img src="images/missing-image.svg" alt="Gallery Image 1" class="w-24 h-24 object-contain hover:scale-105 transition-transform duration-300">
@@ -126,7 +126,7 @@
         </div>
     </div>
 
-    <div class="w-full bg-neutral-300">
+    <div id="history" class="w-full bg-neutral-300">
       <div class="max-w-screen-xl mx-auto px-5 sm:px-0 py-24">
           <h2 class="text-7xl text-slate-700 font-bold font-['Libre_Caslon_Text'] mb-18">History</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -150,7 +150,7 @@
             <div class="md:col-span-2">
 
                 <h3 class="text-2xl text-[#E4C259] font-semibold mb-4">Booking Enquiries</h3>
-                <form action="https://formsubmit.co/your@email.com" method="POST" class="space-y-6 max-w-2xl">
+                <form action="https://formsubmit.co/dan@parachute.io" method="POST" class="space-y-6 max-w-2xl">
                     <div>
                         <label for="name" class="block text-gray-200 text-lg mb-2">Name</label>
                         <input type="text" name="name" required 
