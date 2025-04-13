@@ -168,7 +168,9 @@
 
   <div id="bookings" class="w-full bg-slate-800">
     <div class="max-w-screen-xl mx-auto px-5 sm:px-0 py-24">
-        <h2 class="text-7xl text-[#E4C259] font-bold font-['Libre_Caslon_Text'] mb-18">Booking & Enquiries</h2>
+        <h2 class="text-7xl text-[#E4C259] font-bold font-['Libre_Caslon_Text'] mb-12">Booking & Enquiries</h2>
+        <p class="max-w-xl text-gray-200 text-xl mb-5">Please send us a few details using the form below to enquire about booking the space. </p>  
+        <p class="max-w-xl text-gray-200 text-xl mb-18">We aim to get back to you within 24 hours.</p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div class="md:col-span-2">
 
@@ -200,8 +202,39 @@
                         <label for="notes" class="block text-gray-200 text-lg mb-2">Notes</label>
                         <textarea name="notes" rows="4" 
                             class="w-full px-4 py-3 rounded-lg bg-slate-700 text-gray-200 border border-slate-600 focus:border-[#E4C259] focus:ring-1 focus:ring-[#E4C259] outline-none transition-colors"
-                            placeholder="Please provide any additional information about your booking request..."></textarea>
+                            placeholder="e.g. Purpose of booking, number of attendees, specific requirements, questions..."></textarea>
                     </div>
+
+                    <div class="space-y-4 mb-12">
+                        <div>
+                            <label class="block text-gray-200 text-lg mb-2">I am enquiring on behalf of a charity or non-profit</label>
+                            <div class="flex gap-4 w-1/2">
+                                <label class="flex-1">
+                                    <input type="radio" name="is_charity" value="yes" class="hidden peer">
+                                    <div class="w-full px-4 py-3 rounded-lg bg-slate-700 text-gray-200 border border-slate-600 peer-checked:bg-[#E4C259] peer-checked:text-slate-900 peer-checked:border-[#E4C259] text-center cursor-pointer transition-colors">Yes</div>
+                                </label>
+                                <label class="flex-1">
+                                    <input type="radio" name="is_charity" value="no" class="hidden peer" checked>
+                                    <div class="w-full px-4 py-3 rounded-lg bg-slate-700 text-gray-200 border border-slate-600 peer-checked:bg-[#E4C259] peer-checked:text-slate-900 peer-checked:border-[#E4C259] text-center cursor-pointer transition-colors">No</div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <label class="block text-gray-200 text-lg mb-2">I am a Portsmouth resident</label>
+                            <div class="flex gap-4 w-1/2">
+                                <label class="flex-1">
+                                    <input type="radio" name="is_resident" value="yes" class="hidden peer">
+                                    <div class="w-full px-4 py-3 rounded-lg bg-slate-700 text-gray-200 border border-slate-600 peer-checked:bg-[#E4C259] peer-checked:text-slate-900 peer-checked:border-[#E4C259] text-center cursor-pointer transition-colors">Yes</div>
+                                </label>
+                                <label class="flex-1">
+                                    <input type="radio" name="is_resident" value="no" class="hidden peer" checked>
+                                    <div class="w-full px-4 py-3 rounded-lg bg-slate-700 text-gray-200 border border-slate-600 peer-checked:bg-[#E4C259] peer-checked:text-slate-900 peer-checked:border-[#E4C259] text-center cursor-pointer transition-colors">No</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
                     <button type="submit" 
                         class="w-full bg-[#E4C259] text-slate-900 px-6 py-3 rounded-lg font-semibold hover:bg-[#d4b24f] transition-colors">
                         Send Enquiry
